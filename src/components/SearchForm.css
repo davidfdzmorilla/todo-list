@@ -1,0 +1,13 @@
+.search-form-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.search-form-container .search-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.search-form-container .search-form button.active {
+  background-color: lightblue;
+}

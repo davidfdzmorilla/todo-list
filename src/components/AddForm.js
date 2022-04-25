@@ -18,14 +18,16 @@ export const AddForm = ({ list, setList }) => {
     setForm(todo)
 
     setList(items => {
-      return [...items, todo]
+      if (items) {
+        return [...items, todo]
+      } else return [todo]
+
     })
 
     saveInStorage('todo-list', todo)
 
   }
 
-  console.log(form)
 
   return (
     <section className='add-form-container'>

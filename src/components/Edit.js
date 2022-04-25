@@ -25,7 +25,7 @@ export const Edit = ({ item, getItems, setEdit, setList }) => {
     savedItems[index] = item
 
     // Guardar en el storage
-    localStorage.setItem('films', JSON.stringify(savedItems))
+    localStorage.setItem('todo-list', JSON.stringify(savedItems))
 
     // Actualizar states
     setList(savedItems)
