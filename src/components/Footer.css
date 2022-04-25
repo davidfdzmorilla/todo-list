@@ -1,0 +1,28 @@
+footer {
+  grid-area: footer;
+  background-color: var(--primary-color);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  padding: 0 4rem;
+}
+
+footer a {
+  text-decoration: none;
+  font-size: 1.3rem;
+}
+
+footer .myName {
+  color: var(--secondary-color);
+}
+
+footer .links-logos-container {
+  display: flex;
+  gap: .5rem;
+}
+
+footer .links-logos-container a {
+  font-size: 2rem;
+  color: black;
+}

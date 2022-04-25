@@ -1,9 +1,9 @@
-import React, { useState } from 'react'
 import { saveInStorage } from '../helpers/saveInStorage'
+
+import './AddForm.css'
 
 export const AddForm = ({ list, setList }) => {
 
-  const [form, setForm] = useState({})
 
   const handleSubmit = e => {
     e.preventDefault()
@@ -15,7 +15,6 @@ export const AddForm = ({ list, setList }) => {
       completed: false
     }
 
-    setForm(todo)
 
     setList(items => {
       if (items) {
@@ -35,13 +34,19 @@ export const AddForm = ({ list, setList }) => {
       <form onSubmit={handleSubmit}>
         <label>Título</label>
         <input
+          minLength='4'
+          maxLength='20'
           type='text'
           name='title'
+          required
           placeholder='Escribe aquí...' />
-        <label>Contenido</label>
-        <input
+        <label>Descripción</label>
+        <textarea
+          minLength='8'
+          maxLength='150'
           type='text'
           name='description'
+          required
           placeholder='Escribe aquí...' />
         <input type='submit' value='Guardar' />
       </form>

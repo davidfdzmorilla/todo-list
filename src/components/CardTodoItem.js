@@ -45,18 +45,26 @@ export const CardTodoItem = ({ item, getItems, setList }) => {
 
   return (
     <article className='card-todo-item'>
-      <h3>{title}</h3>
-      <p>{description}</p>
+      <div className='data-item'>
+        <h3>{title}</h3>
+        <p>Descripción:</p>
+        <span>{description}</span>
+      </div>
+
       <div className='buttons-container'>
-        <button className="edit"
-          onClick={() => setEdit(id)}
-        >Editar</button>
-        <button className="delete"
-          onClick={() => deleteItem(id)}
-        >Borrar</button>
         <button className={completed === true ? 'completed' : 'no-completed'}
           onClick={() => completedItem(id)}
-        >{item.completed === true ? 'Completado' : 'No completedo'}</button>
+        >{item.completed === true ? 'Completado' : 'Pendiente'}</button>
+        {edit === 0 &&
+          <>
+            <button className="edit"
+              onClick={() => setEdit(id)}
+            >Editar</button>
+            <button className="delete"
+              onClick={() => deleteItem(id)}
+            >Borrar</button>
+          </>
+        }
         {edit === item.id && (
           <Edit item={item}
             getItems={getItems}

@@ -44,6 +44,7 @@ export const Edit = ({ item, getItems, setEdit, setList }) => {
           className='description-edited'
           defaultValue={item.description} />
         <input type='submit' value='Actualizar' />
+        <button onClick={() => setEdit(0)}>Cerrar</button>
       </form>
     </div>
   )

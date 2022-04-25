@@ -1,3 +1,12 @@
+:root {
+  --primary-color: #606060;
+  --secondary-color: #D6ED17;
+
+  --ligth-primary-color: #6e6c6cc2;
+  --light-secondary-color: #d8ed172f;
+}
+
+
 * {
   margin: 0;
   padding: 0;
@@ -15,18 +24,15 @@
     'aside main'
     'footer footer'
   ;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
 
 header {
   grid-area: header;
-  border: 1px solid black;
-  background-color: rgb(134, 152, 158);
-}
-
-
-
-footer {
-  grid-area: footer;
-  border: 1px solid black;
-  background-color: rgb(35, 169, 210);
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
 }
