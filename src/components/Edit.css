@@ -1,0 +1,15 @@
+.edit-form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  height: 200px;
+  background-color: antiquewhite;
+  padding: 1rem .5rem;
+}
+
+.edit-form form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex-grow: 1;
+}
