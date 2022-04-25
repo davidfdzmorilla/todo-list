@@ -1,13 +1,30 @@
 .search-form-container {
   display: flex;
   flex-direction: column;
+  gap: .5rem;
 }
 
 .search-form-container .search-form {
   display: flex;
   flex-direction: column;
+  gap: .5rem;
+}
+
+.search-form-container .search-form input[type=text] {
+  padding: .5rem;
+  margin-bottom: .5rem;
+  border: none;
+  border-radius: 5px;
+}
+
+.search-form-container .search-form button {
+  padding: .3rem;
+  border: none;
+  border-radius: 5px;
+  font-weight: bolder;
 }
 
 .search-form-container .search-form button.active {
-  background-color: lightblue;
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
 }

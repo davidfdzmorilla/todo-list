@@ -20,7 +20,6 @@ export const SearchForm = ({ setList }) => {
     <section className='search-form-container'>
       <h3>Buscar</h3>
       <div className='search-form'>
-        <label>Buscar</label>
         <input type='text'
           onChange={e => setText(e.target.value)}
           name='text'
@@ -29,7 +28,7 @@ export const SearchForm = ({ setList }) => {
           className={isCompleted === false ? 'active' : ''}
           onClick={
             () => setIsCompleted(false)
-          }>No completadas
+          }>Pendientes
         </button>
         <button
           className={isCompleted ? 'active' : ''}

@@ -2,9 +2,10 @@
   width: 100%;
   display: flex;
   flex-direction: column;
-  height: 200px;
-  background-color: antiquewhite;
+  background-color: var(--ligth-primary-color);
   padding: 1rem .5rem;
+  border-radius: 5px;
+  gap: 1rem;
 }
 
 .edit-form form {
@@ -12,4 +13,33 @@
   flex-direction: column;
   justify-content: space-between;
   flex-grow: 1;
+  gap: .5rem;
+}
+
+.edit-form form input[type=text] {
+  padding: .5rem;
+  border: none;
+  border-radius: 5px;
+}
+
+.edit-form form textarea {
+  padding: .5rem;
+  height: 60px;
+  border: none;
+  border-radius: 5px;
+}
+
+.edit-form form input[type=text],
+.edit-form form input[type=submit],
+.edit-form form button {
+  border: none;
+  border-radius: 5px;
+  padding: .3rem;
+}
+
+.edit-form form input[type=submit],
+.edit-form form button {
+  background-color: var(--primary-color);
+  color: whitesmoke;
+  font-weight: bolder;
 }
