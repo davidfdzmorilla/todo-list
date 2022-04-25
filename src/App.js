@@ -11,7 +11,7 @@ function App() {
     <div className="App">
       <Header />
       <AsideBar list={list} setList={setList} />
-      <MainList />
+      <MainList list={list} setList={setList} />
       <Footer />
     </div>
   );
