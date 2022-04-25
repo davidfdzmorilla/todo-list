@@ -36,3 +36,10 @@ header {
   justify-content: center;
   font-size: 2rem;
 }
+
+@media (max-width: 468px) {
+  .App {
+    display: flex;
+    flex-direction: column;
+  }
+}

@@ -28,3 +28,20 @@
   background-color: var(--primary-color);
   color: var(--secondary-color);
 }
+
+@media (max-width: 468px) {
+  .search-form-container {
+    min-height: 270px;
+  }
+
+  .search-form-container .search-form input[type=text] {
+    padding: 1rem;
+    font-size: 1rem;
+  }
+
+  .search-form-container .search-form button {
+
+    padding: 1rem;
+    font-size: 1rem;
+  }
+}

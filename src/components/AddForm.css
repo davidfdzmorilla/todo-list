@@ -24,3 +24,18 @@
 .add-form-container textarea {
   height: 100px;
 }
+
+@media (max-width: 468px) {
+
+  .add-form-container input,
+  .add-form-container textarea {
+    padding: 1rem;
+    font-size: 1rem;
+  }
+
+  .add-form-container input[type=submit] {
+    padding: 1rem;
+    font-size: 1rem;
+
+  }
+}
