@@ -7,7 +7,7 @@ import './AsideBar.css'
 export const AsideBar = ({ list, setList }) => {
   return (
     <aside>
-      <SearchForm list={list} />
+      <SearchForm list={list} setList={setList} />
       <AddForm list={list} setList={setList} />
     </aside>
   )
