@@ -8,12 +8,10 @@ export const SearchForm = ({ setList }) => {
 
   useEffect(() => {
     let todos = JSON.parse(localStorage.getItem("todo-list"))
-    todos && setList(todos.filter(item => (item.title.includes(text) || item.description.includes(text))))
-  }, [text, setList])
-  useEffect(() => {
-    let todos = JSON.parse(localStorage.getItem("todo-list"))
-    todos && isCompleted !== null ? setList(todos.filter(item => (item.completed === isCompleted))) : setList(todos)
-  }, [isCompleted, setList])
+    let todosFiltered = todos.filter(item => (item.title.includes(text) || item.description.includes(text)))
+    isCompleted !== null ? setList(todosFiltered.filter(item => (item.completed === isCompleted))) : setList(todosFiltered)
+  }, [text, setList, isCompleted])
+
 
 
   return (

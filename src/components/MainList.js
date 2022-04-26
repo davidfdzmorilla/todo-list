@@ -4,6 +4,7 @@ import { CardTodoItem } from './CardTodoItem'
 import './MainList.css'
 
 export const MainList = ({ list, setList }) => {
+  console.log(list)
 
   useEffect(() => {
     // Cargamos componente de listado por primera vez
